@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:wght@100..700');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&family=Quicksand:wght@300..700&display=swap');
+
+
+/* Style */
+body {
+    background-color: var(--background);
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+
+
+
+.timer {
+    
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-size: x-large;
+    font-weight: 700;
+    font-style: normal;
+
+
+    background: -webkit-linear-gradient(#ea7771, #e12d73);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+      }
+
+
+
+.emojis {
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Variables */
+:root {
+    --background: #111111;
+    --red: #e12d73;
+    --orange: #e23d74;
+    --yellow: #e34d75;
+    --green: #e45d76;
+    --blue: #e56d77;
+    --purple: #e67d78;
+}
+
