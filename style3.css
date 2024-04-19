@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:wght@100..700');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&family=Quicksand:wght@300..700&display=swap');
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+@font-face { font-family: neon; src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);}
+
+/* Style */
+body {
+    background-color: var(--background);
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: white;
+    user-select: none;
+}
+
+p:hover {
+    cursor: pointer;
+}
+
+.tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+
+.timer {
+    
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-size: x-large;
+    font-weight: 700;
+    font-style: normal;
+
+
+    background: -webkit-linear-gradient(#FED128, #e67d78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+      }
+
+
+
+.emojis {
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Variables */
+:root {
+    --background: #111111;
+    --red: #e12d73;
+    --orange: #e23d74;
+    --yellow: #e34d75;
+    --green: #e45d76;
+    --blue: #e56d77;
+    --purple: #e67d78;
+}
+
+
+
+  
+  .neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 3vw;
+    line-height: 3vw;
+    text-shadow: 0 0 1vw #F40A35;
+  }
+  
+  
+  .neon {
+    animation: neon 4s ease infinite;
+    -moz-animation: neon 4s ease infinite;
+    -webkit-animation: neon 4s ease infinite;
+  }
+  
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 0.3vw #FA1C16, 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 3vw #FA1C16, 0 0 .15vw #FED128, .2vw .2vw .03vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .125vw #800E0B, 0 0 0.5vw #800E0B, 0 0 1.25vw #800E0B, 0 0 1.25vw #800E0B, 0 0 .1vw #800E0B, .125vw .125vw .05vw #40340A;
+      color: #806914;
+    }
+  }
+  
+ 

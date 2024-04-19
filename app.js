@@ -1,3 +1,5 @@
+
+
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 24, 2024 20:00:00").getTime();
 
@@ -26,3 +28,25 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "YAYYYYYYYYYY";
   }
 }, 1000);
+
+
+function toggleTheme() { 
+  // Obtains an array of all <link> 
+  // elements. 
+  // Select your element using indexing. 
+  var theme = document.getElementsByTagName('link')[0]; 
+
+  // Change the value of href attribute  
+  // to change the css sheet. 
+  if (theme.getAttribute('href') == 'styles.css') { 
+      theme.setAttribute('href', 'style2.css'); 
+  } 
+  else if(theme.getAttribute('href') == 'style2.css') { 
+    theme.setAttribute('href', 'style3.css'); 
+} 
+
+  
+  else { 
+      theme.setAttribute('href', 'styles.css'); 
+  } 
+}
