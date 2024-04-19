@@ -2,10 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 
 
+
+
+
 /* Style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     background-color: var(--background);
     text-align: center;
@@ -13,26 +32,26 @@ body {
 
 p {
     margin-top: 10px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Cinzel", serif;
     font-weight: 100;
     letter-spacing: 2px;
-    color: white;
+    color: #222;
     user-select: none;
-     
 }
 
 p:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 
 .tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
 
 .timer {
     
-    font-family: "Lato", sans-serif;
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-size: x-large;
-    font-weight: 700;
+    font-weight: 100;
     font-style: normal;
 
 
@@ -69,7 +88,7 @@ html, body {
 
 /* Variables */
 :root {
-    --background: #111111;
+    --background: #ecc;
     --red: #e12d73;
     --orange: #e23d74;
     --yellow: #e34d75;
@@ -78,46 +97,3 @@ html, body {
     --purple: #e67d78;
 }
 
-/*   GALLERY         */
-/* 
-.gallery {
-    --s: 200px; /* control the size  
-    --g: 8px;   /* control the gap 
-    
-    display: grid;
-    grid: auto-flow var(--s)/repeat(2,var(--s));
-    gap: var(--g);
-  }
-  .gallery > img {
-    width: 100%; 
-    aspect-ratio: 1;
-    cursor: pointer;
-    filter: grayscale();
-    z-index: 0;
-    transition: .25s,z-index 0s .25s;
-  }
-  .gallery > img:hover {
-    width: calc(200% + var(--g));
-    filter: grayscale(0);
-    z-index: 1;
-    --_c: 50%;
-    transition: .4s,z-index 0s;
-  }
-  .gallery > img:nth-child(1){
-    clip-path: circle(var(--_c,55% at 70% 70%));
-    place-self: start;
-  }
-  .gallery > img:nth-child(2){
-    clip-path: circle(var(--_c,55% at 30% 70%));
-    place-self: start end;
-  }
-  .gallery > img:nth-child(3){
-    clip-path: circle(var(--_c,55% at 70% 30%));
-    place-self: end start;
-  }
-  .gallery > img:nth-child(4){
-    clip-path: circle(var(--_c,55% at 30% 30%));
-    place-self: end;
-  } 
-
-   */
