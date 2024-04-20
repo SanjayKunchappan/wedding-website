@@ -3,21 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&family=Quicksand:wght@300..700&display=swap');
 @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
-@font-face { font-family: neon; src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
 /* Style */
 body {
-    background-color: var(--background);
+    background-color: #000;
     text-align: center;
 }
 
 p {
-    margin-top: 10px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    letter-spacing: 2px;
-    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
     user-select: none;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: large;
+    background-image: linear-gradient(90deg, #595cff 0%, #ffdcdc 50%, #fb1717 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 p:hover {
@@ -28,16 +35,13 @@ p:hover {
 
 .timer {
     
-    font-family: "Lato", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-size: x-large;
-    font-weight: 700;
+    font-size: large;
+    font-weight: 400;
     font-style: normal;
-
-
-    background: -webkit-linear-gradient(#FED128, #e67d78);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: whitesmoke;
+    background-image:none;
   
       }
 
@@ -80,31 +84,6 @@ html, body {
 
 
   
-  .neon {
-    font-family: neon;
-    color: #FB4264;
-    font-size: 3vw;
-    line-height: 3vw;
-    text-shadow: 0 0 1vw #F40A35;
-  }
   
-  
-  .neon {
-    animation: neon 4s ease infinite;
-    -moz-animation: neon 4s ease infinite;
-    -webkit-animation: neon 4s ease infinite;
-  }
-  
-  @keyframes neon {
-    0%,
-    100% {
-      text-shadow: 0 0 0.3vw #FA1C16, 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 3vw #FA1C16, 0 0 .15vw #FED128, .2vw .2vw .03vw #806914;
-      color: #FED128;
-    }
-    50% {
-      text-shadow: 0 0 .125vw #800E0B, 0 0 0.5vw #800E0B, 0 0 1.25vw #800E0B, 0 0 1.25vw #800E0B, 0 0 .1vw #800E0B, .125vw .125vw .05vw #40340A;
-      color: #806914;
-    }
-  }
   
  
